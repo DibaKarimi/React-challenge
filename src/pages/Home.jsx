@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Card from "../components/Card";
-import dummyData from "../dummyData.json"; // To be replaced with your api response data
 
 export const Home = () => {
   const [cardList, setCardList] = useState([]);
