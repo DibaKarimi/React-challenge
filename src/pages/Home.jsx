@@ -22,15 +22,7 @@ export const Home = () => {
   return (
     <>
       <h1>Space X Ships</h1>
-      <div
-        className="App"
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr",
-          rowGap: "10px",
-          columnGap: "20px",
-        }}
-      >
+      <div className="cards">
         {cardList.map((card, index) => {
           return (
             <Link
