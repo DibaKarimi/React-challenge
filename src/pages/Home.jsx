@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Card from "../components/Card";
+import Title from "../components/Title";
 
 export const Home = () => {
+  const title = "Space X Ships";
   const [cardList, setCardList] = useState([]);
   useEffect(() => {
     fetch("https://api.tvmaze.com/shows")
@@ -21,7 +23,7 @@ export const Home = () => {
   }, []);
   return (
     <>
-      <h1>Space X Ships</h1>
+      <Title title={title} />
       <div className="cards">
         {cardList.map((card, index) => {
           return (

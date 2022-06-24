@@ -1,14 +1,12 @@
 import React from "react";
 
 const Image = (props) => {
-  const { imageURL } = props;
-  // console.log(episodeInfo?.image?.original);
-
+  const { imageURL, height } = props;
   return (
     <div
       style={{
         width: "90%",
-        height: "600px",
+        height: `${height}px`,
         backgroundImage: `url(${imageURL})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
